@@ -14,7 +14,7 @@ symbol = st.sidebar.text_input("Symbol", value="MSFT")
 stock = IEXStock(config.IEX_TOKEN, symbol)
 
 screen = st.sidebar.selectbox(
-    "View", ("Overview", "Fundamentals", "News", "Top Gainers"), index=1
+    "View", ("Overview", "Fundamentals", "News", "Top Gainers"), index=0
 )
 
 st.title(screen)
